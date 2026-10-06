@@ -1,283 +1,177 @@
-<div align="center">
-
 # MASTERCODER0912
 
-### Cybersecurity • Systems • Networking • Software Development
-
-[![GitHub](https://img.shields.io/badge/GitHub-Mastercoder0912-181717?style=for-the-badge&logo=github)](https://github.com/Mastercoder0912)
-[![Email](https://img.shields.io/badge/Email-Contact-2ea44f?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mastercoder0912@atomicmail.io)
-
-</div>
-
----
-
-## `./about`
-
-I'm a student developer interested in **cybersecurity, systems programming, networking, Linux, artificial intelligence, and software engineering**.
-
-I enjoy understanding how systems work underneath the abstractions and building things from the ground up. My projects range from a custom programming language and experimental AI architecture to networking, infrastructure, and systems projects.
-
-I'm particularly interested in **cybersecurity and low-level systems**, with an emphasis on learning by building, testing, and breaking things.
-
----
-
-## `./projects`
-
-### C.R.I.S.
-
-**Cycle Refinement Intelligence System**
-
-An experimental AI architecture exploring cellular and brain-inspired computation.
-
-CRIS is built around autonomous computational **cells**, each with its own processing, runtime state, memory, health tracking, and learning behavior.
-
-**Exploring:**
-
-- Neural networks
-- Runtime state and memory
-- Cellular architectures
-- Learning systems
-- Cell health and lifecycle
-- Autonomous behavior
-- Predictive learning
-
-`Python` `AI` `Neural Networks` `Experimental Systems`
-
----
-
-### A-Language
-
-A custom programming language designed to make programming approachable while still providing real language and runtime features.
-
-The project includes a lexer, parser, AST, interpreter/runtime, classes, functions, types, JSON, SQLite, OS functionality, testing, and a Linux installation system.
-
 ```text
-Source
-  ↓
-Lexer
-  ↓
-Parser
-  ↓
-AST
-  ↓
-Runtime
-  ↓
-Program
-```
-
-`C` `Compilers` `Interpreters` `AST` `Language Design`
-
----
-
-### Experimental Internet Protocol
-
-A custom application-level protocol designed to operate on top of socket connections.
-
-The project explores protocol design, structured communication, and how applications can define their own communication layer over existing networking infrastructure.
-
-`Networking` `Sockets` `TCP/IP` `Protocol Design`
-
----
-
-### Command Center
-
-A CLI-oriented remote debugging and control project built around SSH and remote systems.
-
-The goal is to make interacting with and diagnosing remote machines more efficient from the command line.
-
-`Linux` `SSH` `CLI` `Remote Systems`
-
----
-
-## `./languages`
-
-### Programming Languages
-
-| Language | Focus |
-|---|---|
-| **C** | Systems programming |
-| **Python** | AI, automation, experimentation |
-| **Java** | Software development |
-| **C#** | Unity / game development |
-| **C++** | Performance experiments |
-| **JavaScript** | Web development |
-| **A-Language** | Language development |
-
-### Technologies
-
-`Linux` `Git` `GitHub` `Docker` `Kubernetes` `SSH`
-
-`WireGuard` `TCP/IP` `Virtual Machines` `Raspberry Pi`
-
-`Azure` `DigitalOcean` `Oracle Cloud`
-
-`Unity` `VS Code` `Make`
-
----
-
-## `./cybersecurity`
-
-My cybersecurity interests are centered around understanding systems rather than simply learning individual security tools.
-
-### Areas of Interest
-
-- Network security
-- TCP/IP and networking
-- Linux security
-- SSH and remote administration
-- VPNs and WireGuard
-- Firewalls
-- Server administration
-- Cloud infrastructure
-- Penetration testing
-- Protocol security
-- Systems security
-
-> **Build it → understand it → break it → secure it**
-
----
-
-## `./infrastructure`
-
-I've worked with a range of hardware and infrastructure, including:
-
-```text
-Linux Systems
-    ├── Fedora
-    ├── Debian
-    └── Security-focused environments
-
-Hardware
-    ├── Raspberry Pi
-    ├── x86 PCs
-    └── Low-resource systems
-
-Infrastructure
-    ├── Docker
-    ├── Kubernetes
-    ├── Virtual Machines
-    ├── VPS
-    └── Cloud platforms
-
-Networking
-    ├── TCP/IP
-    ├── SSH
-    ├── WireGuard
-    ├── VPNs
-    └── Firewalls
-```
-
-I particularly enjoy working with systems where I have to configure and troubleshoot the infrastructure myself.
-
----
-
-## `./experience`
-
-### TSA — Software Development
-
-**1st Place — State Level**
-
-Competed in software development and worked on designing and implementing a complete software project.
-
----
-
-### Glasshouse
-
-Professional job-shadow experience involving exposure to:
-
-- Kubernetes
-- Git workflows
-- Software development
-- Engineering teams
-- Professional development environments
-
----
-
-### Engineering
-
-Experience with physical engineering and prototyping through PLTW engineering, including:
-
-- 3D printing
-- VEX hardware
-- Physical prototypes
-- Mechanical design
-- Software/hardware integration
-
----
-
-## `./lab`
-
-A lot of my learning happens outside traditional development environments.
-
-I enjoy experimenting with:
-
-- Old computers
-- Raspberry Pis
-- Linux installations
-- Virtual machines
-- VPS infrastructure
-- Networking equipment
-- Self-hosted services
-- Custom software
-- Experimental protocols
-- AI architectures
-
-Some projects work.
-
-Some projects don't.
-
-The broken ones usually teach me more.
-
----
-
-## `./currently`
-
-```text
-[ ACTIVE ]       C.R.I.S.
-[ ACTIVE ]       A-Language
-[ RESEARCH ]     Experimental Protocol
-[ LEARNING ]     Cybersecurity
-[ LEARNING ]     Networking
-[ LEARNING ]     Systems Programming
-[ EXPERIMENT ]   AI Architectures
+MASTERCODER0912@GITHUB:~$ whoami
+systems • cybersecurity • networking • software engineering • experimental computing
 ```
 
 ---
 
-## `./interests`
+## `MASTERCODER0912@GITHUB:~$ ./about`
+
+I build projects to understand the systems under the abstractions: interpreters, local-network tooling, desktop app architecture, and secure web backends.
+
+This profile is project-first. Every claim below maps to public repository code, docs, or structure.
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./project-index`
+
+[01] [A-Language](#01-a-language)  
+[02] [AccessVoice](#02-accessvoice)  
+[03] [PhoneSploit-Pro](#03-phonesploit-pro)  
+[04] [TSA-Webmaster (archived)](#04-tsa-webmaster-archived)  
+[05] [Bias-Simulation](#05-bias-simulation)
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./repositories --classify`
+
+- **FLAGSHIP** → `A-Language`
+- **SECONDARY** → `AccessVoice`
+- **EXPERIMENTAL** → `PhoneSploit-Pro`, `Bias-Simulation`
+- **UTILITY** → `Mastercoder0912` (profile repository)
+- **COURSEWORK** → `Bias-Simulation`
+- **ARCHIVED** → `TSA-Webmaster`
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./flagship-projects`
+
+### [01] A-Language
+`[ STATUS: ACTIVE ]`
+
+Educational interpreted language implemented in C, including full language pipeline and runtime modules.
+
+**TECHNICAL HIGHLIGHTS**
+- Lexer, recursive-descent parser, AST, and interpreter (`lexer.c`, `parser.c`, `ast.c`, `interpreter.c`)
+- Runtime modules for JSON and SQLite-backed data handling (`runtime.c`, `interpreter.c`)
+- Python execution bridge and OS helper commands in the language runtime (`builtins.c`, `tests/python_integration.a`, `tests/os_commands.a`)
+- Build/install/test workflow via `make build`, `make install`, and `make test` (`makefile`)
+- Bundled VS Code language tooling in `a-lang-vscode/`
+
+**STACK**
+- C, SQLite3, Make
+- Language tooling (lexer/parser/AST/runtime)
+- VS Code extension packaging
+
+**SOURCE** → <https://github.com/Mastercoder0912/A-Language>
+
+### [02] AccessVoice
+`[ STATUS: MAINTENANCE ]`
+
+Desktop accessibility assistant prototype built with an Electron frontend and Python AI backend communicating over JSON IPC.
+
+**TECHNICAL HIGHLIGHTS**
+- Electron main/renderer split with preload bridge (`main.js`, `preload.js`, `render.js`)
+- Python backend for request handling and Gemini API integration (`ai.py`)
+- Voice/text workflow with floating text overlay (`index.html`, `textbar.html`)
+- Desktop packaging configuration with Electron Forge (`forge.config.js`, `package.json`)
+
+**STACK**
+- JavaScript (Electron), Python
+- HTML/CSS
+- Node tooling (Electron Forge)
+
+**SOURCE** → <https://github.com/Mastercoder0912/AccessVoice>
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./cybersecurity-networking`
+
+### [03] PhoneSploit-Pro
+`[ STATUS: EXPERIMENTAL ]`
+
+Python-based local-network targeting helper around a PhoneSploit-Pro workflow.
+
+**TECHNICAL HIGHLIGHTS**
+- Wi-Fi interface discovery and subnet scan logic (`connection.py`)
+- Threaded host probing and ADB port checks on `5555` (`connection.py`)
+- CLI-driven target selection and launch flow for downstream tooling (`connection.py`)
+
+**STACK**
+- Python, sockets, subprocess/threading
+
+**SOURCE** → <https://github.com/Mastercoder0912/PhoneSploit-Pro>
+
+> Command Center and the custom protocol project are not currently public repositories under this account, so they are not represented as public portfolio evidence here.
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./infrastructure-systems`
+
+### [04] TSA-Webmaster *(archived)*
+`[ STATUS: ARCHIVED ]`
+
+Archived Flask web platform with authentication, content/search flows, and security middleware patterns.
+
+**TECHNICAL HIGHLIGHTS**
+- Flask application with route-level account/content features (`app.py`)
+- SQLite usage through CS50 SQL bindings (`app.py`, `users.db`)
+- Security controls including rate limiting, CSP headers, and 2FA utilities (`app.py`, `helpers.py`, `requirments.txt`)
+
+**STACK**
+- Python, Flask, SQLite, Flask-Limiter
+
+**SOURCE** → <https://github.com/Mastercoder0912/TSA-Webmaster>
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./experimental-work`
+
+### [05] Bias-Simulation
+`[ STATUS: EXPERIMENTAL / COURSEWORK ]`
+
+Interactive simulation of bias propagation in a small-world-style network model.
+
+**TECHNICAL HIGHLIGHTS**
+- Custom node graph model with local and randomized long-distance edges (`final_project.py`)
+- Tkinter-based interactive visualization and control panel (`final_project.py`)
+- Reproducible tension model with seeded stochastic behavior (`final_project.py`)
+
+**STACK**
+- Python, Tkinter
+
+**SOURCE** → <https://github.com/Mastercoder0912/Bias-Simulation>
+
+### Private / non-public work
+- **C.R.I.S.** — private experimental research project (not public on GitHub)
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./technical-domains`
+
+**LANGUAGES**  
+C, Python, JavaScript, HTML/CSS
+
+**SYSTEMS**  
+Interpreter/runtime design, OS-level command tooling, desktop process orchestration
+
+**NETWORKING**  
+Socket probing, subnet scanning, ADB-over-network targeting workflow
+
+**INFRASTRUCTURE**  
+SQLite-backed apps, Make-based build/install flows, Electron packaging
+
+**TOOLS**  
+Git/GitHub, Flask, Electron, SQLite, VS Code extension scaffolding
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./experience`
+
+- **TSA Software Development** — 1st place (state level)
+- **Glasshouse job-shadow experience** — exposure to Kubernetes, Git workflows, and team software delivery
+- **PLTW engineering** — prototyping and software/hardware integration
+
+---
+
+## `MASTERCODER0912@GITHUB:~$ ./contact`
+
+- **Email:** [mastercoder0912@atomicmail.io](mailto:mastercoder0912@atomicmail.io)
+- **GitHub:** <https://github.com/Mastercoder0912>
 
 ```text
-> Cybersecurity
-> Computer Networks
-> Linux
-> Low-Level Systems
-> Artificial Intelligence
-> Programming Languages
-> Protocol Design
-> Hardware
-> Infrastructure
-> Old Computers
-> Building Things That Probably Shouldn't Be This Complicated
+MASTERCODER0912@GITHUB:~$ exit
+[ connection closed ]
 ```
-
----
-
-## `./contact`
-
-Interested in discussing **cybersecurity, software development, systems, networking, or interesting technical projects**?
-
-**Email:** [mastercoder0912@atomicmail.io](mailto:mastercoder0912@atomicmail.io)
-
-**GitHub:** [github.com/Mastercoder0912](https://github.com/Mastercoder0912)
-
----
-
-<div align="center">
-
-### `MASTERCODER0912@GITHUB:~$ exit`
-
-**Thanks for stopping by.**
-
-`[ connection closed ]`
-
-</div>
