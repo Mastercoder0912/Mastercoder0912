@@ -24,8 +24,7 @@
 
     body {
       margin: 0;
-      background:
-        radial-gradient(ellipse at top, #14251b 0%, var(--bg) 65%);
+      background: radial-gradient(ellipse at top, #14251b 0%, var(--bg) 65%);
       color: var(--text);
       font: 16px/1.6 system-ui, sans-serif;
       min-height: 100vh;
@@ -44,10 +43,27 @@
     }
 
     .terminal {
-      padding: 12px 16px;
+      padding: 14px 16px;
       color: var(--green);
-      font: 13px/1.6 ui-monospace, monospace;
+      font: 13px/1.8 ui-monospace, monospace;
       overflow-wrap: anywhere;
+      min-height: 94px;
+    }
+
+    .terminal-line { min-height: 1.8em; }
+
+    .cursor {
+      display: inline-block;
+      width: 7px;
+      height: 14px;
+      margin-left: 3px;
+      vertical-align: -2px;
+      background: var(--green);
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to { visibility: hidden; }
     }
 
     .hero { padding: 36px 4px 26px; }
@@ -70,7 +86,6 @@
     h2 { font-size: 18px; margin: 0 0 10px; }
 
     p { color: var(--muted); }
-
     .hero p { max-width: 510px; }
 
     .links {
@@ -88,11 +103,29 @@
       color: var(--green);
       text-decoration: none;
       font-weight: 650;
+      transition: background .2s, color .2s;
+    }
+
+    .button:hover {
+      background: #183023;
     }
 
     .button.primary {
       background: var(--green);
       color: #07110a;
+    }
+
+    .button.primary:hover {
+      background: #a0f2bf;
+    }
+
+    .button.linkedin {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .button.linkedin:hover {
+      background: #172638;
     }
 
     .section-label {
@@ -126,14 +159,31 @@
       font: 12px ui-monospace, monospace;
       text-align: center;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main>
-    <div class="terminal">
-      MASTERCODER0912@GITHUB:~$ whoami<br>
-      programmer | cybersecurity enthusiast
+    <div class="terminal" aria-label="Terminal introduction">
+      <div class="terminal-line" id="line1">
+        MASTERCODER0912@GITHUB:~$ <span>whoami</span>
+      </div>
+      <div class="terminal-line" id="line2">
+        <span>programmer | cybersecurity enthusiast</span>
+      </div>
+      <div class="terminal-line" id="line3">
+        <span id="boot-output">initializing profile...</span><span
+          class="cursor" id="cursor" aria-hidden="true"></span>
+      </div>
     </div>
 
     <header class="hero">
@@ -147,11 +197,16 @@
       <div class="links">
         <a class="button primary"
            href="https://github.com/Mastercoder0912">
-          View GitHub ↗
+          GitHub ↗
+        </a>
+        <a class="button linkedin"
+           href="https://www.linkedin.com/in/austin-maldonado-154009405/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn ↗
         </a>
         <a class="button"
            href="https://github.com/Mastercoder0912?tab=repositories">
-          My projects
+          Projects
         </a>
       </div>
     </header>
@@ -197,5 +252,65 @@
       <p>MASTERCODER0912@GITHUB:~$ exit_</p>
     </footer>
   </main>
+
+  <script>
+    (() => {
+      const output = document.getElementById("boot-output");
+      const cursor = document.getElementById("cursor");
+      const terminal = document.querySelector(".terminal");
+
+      const commands = [
+        "loading profile...",
+        "checking available projects...",
+        "status: online"
+      ];
+
+      // Respect accessibility preferences and avoid replaying
+      // the animation when navigating back to the page.
+      const reducedMotion =
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const alreadyVisited =
+        window.sessionStorage.getItem("cardBooted") === "yes";
+
+      if (reducedMotion || alreadyVisited) {
+        output.textContent = commands[commands.length - 1];
+        cursor.hidden = true;
+        return;
+      }
+
+      window.sessionStorage.setItem("cardBooted", "yes");
+
+      let commandIndex = 0;
+      let characterIndex = 0;
+      output.textContent = "";
+
+      function typeNext() {
+        const current = commands[commandIndex];
+
+        if (characterIndex < current.length) {
+          output.textContent += current.charAt(characterIndex);
+          characterIndex++;
+          window.setTimeout(typeNext, 38);
+          return;
+        }
+
+        commandIndex++;
+        characterIndex = 0;
+
+        if (commandIndex < commands.length) {
+          window.setTimeout(() => {
+            output.textContent = "";
+            typeNext();
+          }, 450);
+        } else {
+          cursor.hidden = true;
+          terminal.setAttribute("aria-label", "Terminal introduction complete");
+        }
+      }
+
+      typeNext();
+    })();
+  </script>
 </body>
 </html>
